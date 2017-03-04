@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=iso-8859-1" />
+    <title>SDSU Marathon</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<link rel="stylesheet" type="text/css" href="register.css" />
+	<script type="text/javascript" src="/jquery/jquery.js"></script>
+	<script type="text/javascript" src="ajax_get_lib.js"></script>
+	<script type="text/javascript" src="register.js"></script>
+	<script type="text/javascript" src="formtemp.js"></script>
+</head>
+
+<body>
+	<div id="container">
+        <h2>Registration</h2>
+	<form name="personal" method="post" action="final.php" enctype="multipart/form-data" >
+	<fieldset>
+	<legend><b>Personal Information</b></legend>
+        
+	    <table id="personalTable">
+                <tr>		
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" size="20" /></td>
+					<td><label for="mname">Middle Name:</label></td>
+                    <td><input type="text" name="mname" id="mname" size="20"  /></td>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname" size="20" /></td>                    
+                </tr>
+				<tr>
+					<td><label for="gender">Gender:</label></td>
+					<td><input type="radio" name="gender" id="male" value="male"/> Male	<input type="radio" name="gender" id="female" value="female" /> Female </td>
+				
+					<td><label for="dob">Date of Birth:</label></td>
+					<td><input type="text" id="m" size="2" maxlength="2" name="month"placeholder="MM" />-<input type="text" id="d" size="2" name="day" maxlength="2" placeholder="DD" />-<input type="text" id="y" size="4"  maxlength="4" name="year" placeholder="YYYY"/></td>
+				</tr>
+                <tr>		
+                    <td><label for="address1">Address 1:</label></td>
+                    <td><input type="text" name="address1" id="address1" size="35" /></td>
+                </tr> 
+                <tr>		
+                    <td><label for="address2">Address 2:</label></td>
+                    <td><input type="text" name="address2" id="address2" size="35" /></td>
+                </tr>                  
+                <tr>		
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" name="city" id="city" size="20" /></td>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" name="state" id="state" /</td>
+                    <td><label for="zip">Zipcode:</label></td>
+                    <td><input type="text" name="zip" id="zip" size="5" maxlength="5" placeholder="#####"/></td>                                        
+                </tr> 
+				<tr>
+				<td><label for="phone">Phone</label></td>
+                <td><input type="text" name="phone" id="phone" size="10" maxlength="10" placeholder="xxxxxxxxxx"/></td>
+				
+				<td><label for="email">Email</label></td>
+                <td><input type="text" name="email" id="email" size="20" /></td>
+				</tr>
+				<tr>
+					<td><label for="race">Race category:</label></td>
+					<td><select name="race" id="race">
+					<option value="---">---</option>
+					<option value="full">Full Marathon</option>
+					<option value="half">Half Marathon</option>
+					<option value="five">5 mile run</option>
+					</select></td>
+				
+					<td><label for="experience">Experience Level:</label></td>
+					<td><select name="experience" id="experience">
+					<option value="---">---</option>
+					<option value="expert">Expert</option>
+					<option value="experienced">Experienced</option>
+					<option value="novice">Novice</option>
+					</select></td>
+				
+					<td><label for="category">Category:</label></td>
+					<td><select name="category" id="category">
+					<option value="---">---</option>
+					<option value="teen">Teen(18-25 yrs)</option>
+					<option value="adult">Adult(26-59 yrs)</option>
+					<option value="senior">Seniors(Above 60yrs)</option>
+					</select></td>
+				</tr>
+                <tr>		
+                    <td><label for="medical">Medical Conditions:</label></td>
+					<td><textarea name="medical" rows="7" cols="28"></textarea></td>                    
+                </tr>
+				<tr>
+					<td>Image:</td>
+					<td><input type="file" id="picture" name="file" /></td>
+				</tr>
+            </table>   
+	</fieldset> 
+	
+		<div id="message_line">&nbsp;</div><br/>
+		<div id="button_panel">  
+            <input type="reset" value="Clear Data" class="button" />
+            <input type="submit" value="Submit Data"  class="button" /> 
+        </div> 
+		<br/>
+	</form>
+    </div>
+</body>
+</html>

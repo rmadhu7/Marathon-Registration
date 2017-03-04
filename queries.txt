@@ -1,0 +1,25 @@
+use jadrn041;
+
+drop table if exists person;
+
+CREATE table person(
+	id int AUTO_INCREMENT PRIMARY KEY,
+	fname varchar(20) not null, 
+	mname varchar(20), 
+	lname varchar(20) not null,
+	gender ENUM('male','female') not null,
+	dob varchar(10) not null,
+	address1 varchar(30) not null,
+	address2 varchar(30),
+	city varchar(30) not null,
+	state varchar(20) not null,
+	zipcode char(5) not null,
+	phoneno char(10) not null,
+	email varchar(50) not null,
+	race ENUM('full','half','five') not null,
+	experience ENUM('expert','experienced','novice'),
+	category ENUM('teen','adult','senior'),
+	medical varchar(150),
+	image varchar(40) not null);
+	
+INSERT INTO person VALUES(0,'Jim','','Robeson','male','03-07-1979','3456 30th St','','San Diego','CA','92104','9980989076','jrobeson@yahoo.com','half','expert','adult','','1.jpeg');

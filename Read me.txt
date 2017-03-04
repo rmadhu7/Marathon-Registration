@@ -1,0 +1,13 @@
+Environment: xhtml (strict or transitional), html 5, css, Javascript, AJAX, jQuery, MySQL, PHP
+Entry point: index.html
+Project: A web site that lets users sign up for the ficticious SDSU Marathon. The ficticious marathon thatd will start at the SDSU Library and it should have a sign up Registration page.
+1. AJAX to verify that the form to be submitted is not a duplicate.
+2. A php script that reads the parameters from the form and stores them in your MySQL database on opatija.sdsu.edu. We will discuss database design and a sample DB schema will be provided.
+3. You must also upload and store the runner's image on the server. Do not store the actual image in the MySQL database, store only the name and use a folder on the server for the image file.
+4. A report that gives the roster of the runners, grouped by category (teen, adult, senior) and alphabetized by last name. The report should contain the following information:
+        Runner's last name, first name
+        The runner's image
+        Runner's age at the time the report is generated
+        Runner's experience level.
+        Emergency contact's last name, first name, primary phone
+5. A confirmation page

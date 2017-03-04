@@ -1,0 +1,23 @@
+h2 {
+    text-align: center;
+    }
+body{
+	background-color: #E6E6FA;
+	color: #4B0082;
+	}    
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: arial;
+	text-align: center;
+    }
+    
+td,th {
+    border: 1px solid #4B0082;
+    padding: 3px;
+    }
+    
+tr:nth-child(even) {
+    background-color: #9370DB;
+    }
